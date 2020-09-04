@@ -1,3 +1,3 @@
-# JavaScript
+# JavaScript tutorial
 
-Tutorial seguido de Javascript para crear todos estos archivos
+Tutorial seguido para crear todos estos ficheros de JavaScript
