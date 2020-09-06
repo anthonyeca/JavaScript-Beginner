@@ -3,13 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/proyecto-js/js/main.js">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Proyecto con Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link id ="theme" rel="stylesheet" type="text/css" href="css/green.css">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- SLIDER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- Moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/es.min.js"></script>
+
+    <!-- Mis Scripts -->
+    <script type="text/Javascript" src="js/main.js"></script>
 </head>
 
 <body>
+
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+
+
     <section id="global">
 
         <!-- Cabezera -->
@@ -33,8 +57,12 @@
         </header>
 
         <!-- Slider -->
-        <div id="slider">
-
+        <div class="slider">
+            <div class="galeria">
+                <div><img src="img/hojas.jpg"></div>
+                <div><img src="img/rojo.jpg"></div>
+                <div><img src="img/cielo.jpg"></div>
+            </div>
         </div>
 
         <!-- Contenido -->
@@ -42,41 +70,46 @@
         <section id="content">
             <div id="posts">
 
-                <article class="post">
-                    <h2>Titulo del articulo</h2>
-                    <span class="date">Fecha de publicacion</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, excepturi perferendis?
-                        Aspernatur laboriosam, cum rerum optio magnam quas? Iure perspiciatis dolorum necessitatibus
-                        totam, minus nesciunt consequuntur mollitia deleniti iusto non!
-                    </p>
-                    <p>
+                <!-- Cargar posts desde json -->
+                <!--
 
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed repellat harum tempore,
-                        consequatur facere quo eius deserunt quisquam, omnis maiores dolore ipsam doloremque tempora
-                        inventore vitae saepe nisi dolor sint.
-                    </p>
+                    <article class="post">
+                        <h2>Titulo del articulo</h2>
+                        <span class="date">Fecha de publicacion</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, excepturi perferendis?
+                            Aspernatur laboriosam, cum rerum optio magnam quas? Iure perspiciatis dolorum necessitatibus
+                            totam, minus nesciunt consequuntur mollitia deleniti iusto non!
+                        </p>
+                        <p>
+                            
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed repellat harum tempore,
+                            consequatur facere quo eius deserunt quisquam, omnis maiores dolore ipsam doloremque tempora
+                            inventore vitae saepe nisi dolor sint.
+                        </p>
+                        
+                        <a href="#" class="button-more">Leer más</a>
+                    </article>
+                    <article class="post">
+                        <h2>Titulo del articulo</h2>
+                        <span class="date">Fecha de publicacion</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, excepturi perferendis?
+                            Aspernatur laboriosam, cum rerum optio magnam quas? Iure perspiciatis dolorum necessitatibus
+                            totam, minus nesciunt consequuntur mollitia deleniti iusto non!
+                        </p>
+                        <p>
+                            
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed repellat harum tempore,
+                            consequatur facere quo eius deserunt quisquam, omnis maiores dolore ipsam doloremque tempora
+                            inventore vitae saepe nisi dolor sint.
+                        </p>
+                        
+                        <a href="#" class="button-more">Leer más</a>
+                    </article>
+                    
+                -->
 
-                    <a href="#" class="button-more">Leer más</a>
-                </article>
-                <article class="post">
-                    <h2>Titulo del articulo</h2>
-                    <span class="date">Fecha de publicacion</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, excepturi perferendis?
-                        Aspernatur laboriosam, cum rerum optio magnam quas? Iure perspiciatis dolorum necessitatibus
-                        totam, minus nesciunt consequuntur mollitia deleniti iusto non!
-                    </p>
-                    <p>
-
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed repellat harum tempore,
-                        consequatur facere quo eius deserunt quisquam, omnis maiores dolore ipsam doloremque tempora
-                        inventore vitae saepe nisi dolor sint.
-                    </p>
-
-                    <a href="#" class="button-more">Leer más</a>
-                </article>
-
-            </div>
-            <aside id="aside">
+                </div>
+                <aside id="aside">
                 <div id="about">
                     <h4><span>¿Quien soy?</span></h4>
                     <img src="../proyecto-js/img/caracol.jpg">
@@ -90,13 +123,13 @@
                     <h4><span>Identificate</span></h4>
                     <form>
                         <label for="name">Nombre</label>
-                        <input type="text" name="name"/>
+                        <input type="text" name="name" />
 
                         <label for="email">Correo</label>
-                        <input type="text" name="email"/>
+                        <input type="text" name="email" />
 
                         <label for="password">Contraseña</label>
-                        <input type="password" name="password"/>
+                        <input type="password" name="password" />
 
                         <input type="submit" value="Entrar">
                     </form>
@@ -108,7 +141,7 @@
     </section>
 
     <footer>
-        Javascript
+        Javascript &copy;
     </footer>
 </body>
 

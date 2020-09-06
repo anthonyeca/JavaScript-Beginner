@@ -8,11 +8,6 @@
   clear: both;
 }
 
-body {
-  background: url("../img/hojas.jpg");
-  background-attachment: fixed;
-}
-
 #global {
   width: 65%;
   margin: 0px auto;
@@ -28,7 +23,6 @@ body {
   font-size: 30px;
   line-height: 75px;
   letter-spacing: 4px;
-  background: #235e3d;
   color: white;
   text-align: center;
   width: 385px;
@@ -54,10 +48,6 @@ body {
   height: 46px;
   display: inline-block;
   transition: all 300ms;
-}
-
-#menu ul li:hover {
-  background: #235e3d;
 }
 
 #menu a {
@@ -102,16 +92,11 @@ body {
   text-align: center;
   width: 70px;
   padding: 15px;
-  background: #235e3d;
   color: white;
   text-decoration: none;
   margin-top: 10px;
   float: auto;
   margin-bottom: 40px;
-}
-
-.button-more:hover {
-  background: #236e3d;
 }
 
 #aside {
@@ -160,4 +145,55 @@ form input[type="submit"] {
   border: 1px solid #ccc;
   color: #333;
   cursor: pointer;
+}
+
+footer {
+  font-family: Helvetica, Arial;
+  color: white;
+  height: 47px;
+  background: rgb(51, 51, 51, 0.7);
+  margin: 0px auto;
+  width: 65%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
+  line-height: 47px;
+}
+
+.bx-wraapper,
+.bx-viewport {
+  height: 250px !important;
+}
+
+#selector-theme {
+  position: fixed;
+  top: 40%;
+  background: rgba(51, 51, 51, 0.4);
+  width: 50px;
+  height: 100px;
+}
+
+#to-green,
+#to-red,
+#to-blue {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#to-green{
+  background: #235e3d;
+}
+
+#to-red{
+  background: #ca3413;
+}
+
+#to-blue{
+  background: #1f87c4;
 }
