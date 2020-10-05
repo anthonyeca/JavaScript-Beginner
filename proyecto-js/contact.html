@@ -47,28 +47,35 @@
         <section id="content">
             <div id="box">
 
-                <!-- Cargar acordeon -->
-                <h2>Sobre Mi</h2>
-                <div id="acordeon">
-                    <h3><span> Quienes somos ?</span></h3>
-                    <div>
+                <!-- Cargar formulario -->
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id repellat nulla error quae
-                            necessitatibus
-                            voluptatem optio, debitis facere sint eaque.</p>
-                    </div>
-                    <h3><span> Nuestros servicios</span></h3>
-                    <div>
+                <h2>Contacto</h2>
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque illo dicta labore. Beatae,
-                            maxime deserunt!
-                    </div>
-                    <h3><span> Nuestros clientes</span></h3>
-                    <div>
+                <form action="" method="POST" id="form_contact">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" data-validation="alphanumeric" />
+                    
+                    <label for="surname">Apellido</label>
+                    <input type="text" name="surname" data-validation="alphanumeric"/>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quae.
-                    </div>
-                </div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" data-validation="email"/>
+
+                    <label for="sex">Sexo</label>
+                    <select name="sex" data-validation="required">
+                        <option value="men">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+
+                    <label for="date">Fecha de Nacimiento</label>
+                    <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy"/>
+
+                    <label for="years">Edad</label>
+                    <input type="number" name="years" data-validation="number"/>
+
+                    <input type="submit" value="Enviar" data-validation="submit"/>
+                </form>
+                
             </div>
             <aside id="aside">
                 <div id="about">
@@ -117,6 +124,12 @@
 
     <!-- Mis Scripts -->
     <script type="text/Javascript" src="js/main.js"></script>
+
+    <!-- Plugin validacion -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+
 </body>
 
 </html>
