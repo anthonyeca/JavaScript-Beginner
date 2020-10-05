@@ -8,21 +8,7 @@
 
     <!-- Estilo CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link id ="theme" rel="stylesheet" type="text/css" href="css/green.css">
-
-    <!-- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <!-- SLIDER -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-    <!-- Moment -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/es.min.js"></script>
-
-    <!-- Mis Scripts -->
-    <script type="text/Javascript" src="js/main.js"></script>
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
 </head>
 
 <body>
@@ -48,9 +34,9 @@
 
             <nav id="menu">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Calculadora</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="#">Reloj</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
@@ -108,8 +94,8 @@
                     
                 -->
 
-                </div>
-                <aside id="aside">
+            </div>
+            <aside id="aside">
                 <div id="about">
                     <h4><span>¿Quien soy?</span></h4>
                     <img src="../proyecto-js/img/caracol.jpg">
@@ -123,7 +109,7 @@
                     <h4><span>Identificate</span></h4>
                     <form>
                         <label for="name">Nombre</label>
-                        <input type="text" name="name" />
+                        <input type="text" name="name" id="form_name" />
 
                         <label for="email">Correo</label>
                         <input type="text" name="email" />
@@ -142,7 +128,23 @@
 
     <footer>
         Javascript &copy;
+
+        <a href="#" class="subir">Subir</a>
     </footer>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- SLIDER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- Moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/es.min.js"></script>
+
+    <!-- Mis Scripts -->
+    <script type="text/Javascript" src="js/main.js"></script>
 </body>
 
 </html>

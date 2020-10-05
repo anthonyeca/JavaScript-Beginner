@@ -68,9 +68,10 @@
   padding: 7px;
 }
 
-.post h2 {
+h2 {
   font-size: 30px;
   color: #333;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .post .date {
@@ -160,6 +161,13 @@ footer {
   line-height: 47px;
 }
 
+.subir{
+  color: white;
+  text-decoration: none;
+  display: block;
+  float: right;
+}
+
 .bx-wraapper,
 .bx-viewport {
   height: 250px !important;
@@ -196,4 +204,14 @@ footer {
 
 #to-blue{
   background: #1f87c4;
+}
+
+#box{
+  width: 60%;
+  float: left;
+  margin-top: 40px;
+}
+
+#acordeon {
+  margin-top: 20px;
 }
